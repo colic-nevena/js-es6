@@ -1,0 +1,55 @@
+{
+    "teachers": [{
+            "id": 1,
+            "licno_ime": "Nenad Kitanović",
+            "rating": 3,
+            "privatni_cas": false,
+            "zabrana_rez": false,
+            "kursevi": ["matematika", "hemija", "fizika"],
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 13, 14, 15, 16, 17]
+        },
+
+        {
+            "id": 2,
+            "licno_ime": "Danijela Kitanović",
+            "rating": 3,
+            "privatni_cas": false,
+            "zabrana_rez": false,
+            "kursevi": ["engleski", "nemacki", "francuski"],
+            "dani": ["uto", "sre", "pet", "sub"],
+            "sati": [8, 9, 10, 11, 12, 15, 16, 17]
+        },
+        {
+            "id": 3,
+            "licno_ime": "Anđela Marjanović",
+            "rating": 3,
+            "privatni_cas": false,
+            "zabrana_rez": false,
+            "kursevi": ["engleski", "nemacki", "francuski"],
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        },
+        {
+            "id": 4,
+            "licno_ime": "Marko Petrović",
+            "rating": 3,
+            "privatni_cas": false,
+            "zabrana_rez": false,
+            "kursevi": ["norveski", "finski", "svedski", "danski"],
+            "dani": ["pon", "uto", "sre", "cet"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        },
+        {
+            "id": 4,
+            "licno_ime": "Nikolina Andrić",
+            "rating": 3,
+            "privatni_cas": false,
+            "zabrana_rez": false,
+            "kursevi": ["hemija", "fizika", "engleski", "nemacki"],
+            "dani": ["pon", "sre", "cet", "sub"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        }
+
+    ]
+}

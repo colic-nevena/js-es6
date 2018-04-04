@@ -1,0 +1,94 @@
+{
+    "courses": [{
+            "id": 1,
+            "ime": "Matematika",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 13, 14, 15, 16, 17]
+        },
+        {
+            "id": 2,
+            "ime": "Fizika",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 13, 14, 15, 16, 17]
+        },
+        {
+            "id": 3,
+            "ime": "Hemija",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 13, 14, 15, 16, 17]
+        },
+        {
+            "id": 4,
+            "ime": "Engleski",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+        },
+        {
+            "id": 5,
+            "ime": "Nemacki",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+        },
+        {
+            "id": 6,
+            "ime": "Francuski",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
+            "sati": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+        },
+        {
+            "id": 7,
+            "ime": "Norveski",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        },
+        {
+            "id": 8,
+            "ime": "Finski",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        },
+        {
+            "id": 9,
+            "ime": "Svedski",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        },
+        {
+            "id": 10,
+            "ime": "Danski",
+            "rating": 3,
+            "mesta_u_grupi": 4,
+            "zabrana_rez": false,
+            "dani": ["pon", "uto", "sre", "cet"],
+            "sati": [9, 10, 13, 14, 15, 16]
+        }
+
+    ]
+}
