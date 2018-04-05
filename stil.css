@@ -1,14 +1,53 @@
-body, html {
+body,
+html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
 }
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("/w3images/coffeehouse.jpg");
-    min-height: 75%;
-}
-.menu {
-    display: none;
+
+#main {
+    margin: 0 7%;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#taskbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #f98868;
+}
+
+.taskkbar {
+    float: left;
+    width: 25%;
+}
+
+.taskkbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: "Inconsolata", sans-serif;
+    padding: 4%;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.taskkbar a:hover {
+    background-color: #DC623F;
+}
+
+h1 {
+    text-align: center;
+    font-family: "courier";
+}
+
+.info {
+    background-color: #80bd9e;
+}
