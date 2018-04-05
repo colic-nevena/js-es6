@@ -5,7 +5,7 @@ html {
 }
 
 #main {
-    margin: 0 7%;
+    margin: 0 10%;
 }
 
 nav {
@@ -48,6 +48,50 @@ h1 {
     font-family: "courier";
 }
 
-.info {
+.naslov {
     background-color: #80bd9e;
+}
+
+.rejting {
+    text-align: center;
+    font-family: "courier";
+    background-color: #89da59;
+}
+
+.imgSkola {
+    margin: auto;
+    display: block;
+    opacity: 0.85;
+}
+
+.rvreme {
+    background-color: #f98868;
+    color: white;
+}
+
+.nastavnik {
+    float: left;
+    background-color: #89da59;
+    opacity: 0.6;
+    border: 1px solid black;
+    width: 16.5%;
+    height: 140px;
+    margin: 1.6%;
+    text-align: center;
+}
+
+.nastavnikDana {
+    display: block;
+    margin: auto;
+    background-color: #f98866;
+    opacity: 0.6;
+    border: 1px solid black;
+    width: 25%;
+    height: 140px;
+    text-align: center;
+}
+
+.danNaslov {
+    text-align: left;
+    font-family: "courier";
 }
