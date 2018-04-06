@@ -4,7 +4,7 @@ import { RandomService } from './random.service';
 import { NastavnikService } from './nastavnik.service';
 import { KursService } from './kursevi.service';
 import * as Rx from 'rxjs';
-import { interval } from 'rxjs/Observable/interval';
+
 
 
 export class DrawService {
@@ -14,7 +14,7 @@ export class DrawService {
         const x = document.getElementById("rat");
         const el = document.createElement("p");
         el.className = "rejting";
-        el.innerHTML = `<h3>Bodova za kvalitet: ${rating} od mogucih 35</h3>`;
+        el.innerHTML = `<h3>Rating: ${rating}</h3>`;
         x.appendChild(el);
 
     }
@@ -24,12 +24,10 @@ export class DrawService {
         const x = document.getElementById("ratNast");
         const el = document.createElement("p");
         el.className = "rejting";
-        el.innerHTML = `<h3>Bodova za kvalitet: ${rating} od mogucih 25</h3>`;
+        el.innerHTML = `<h3>Rating: ${rating}</h3>`;
         x.appendChild(el);
 
     }
-
-
 
 
 
@@ -105,7 +103,25 @@ export class DrawService {
         p.appendChild(ell);
     }
 
+    static ShowScienceRating(rating) {
 
+        const x = document.getElementById("ratSc");
+        const el = document.createElement("p");
+        el.className = "rejting";
+        el.innerHTML = `<h3>Rating: ${rating}</h3>`;
+        x.appendChild(el);
+
+    }
+
+    static ShowLangRating(rating) {
+
+        const x1 = document.getElementById("ratLang");
+        const el1 = document.createElement("p");
+        el1.className = "rejting";
+        el1.innerHTML = `<h3>Rating: ${rating}</h3>`;
+        x1.appendChild(el1);
+
+    }
 
 
 

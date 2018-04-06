@@ -17,6 +17,7 @@
                 <li class="taskkbar"><a href="#info">O školi</a></li>
                 <li class="taskkbar"><a href="#nast">Nastavnici</a></li>
                 <li class="taskkbar"><a href="#kurs">Kursevi</a></li>
+                <li class="taskkbar"><a href="#zak">Zakazivanje</a></li>
 
             </ul>
         </nav>
@@ -63,8 +64,10 @@
 
 
         <article id="kurs">
-
-            <h1><span class="naslov">Kursevi koje Vam Camelot nudi</span></h1>
+            <p id="cont">
+                <br/>
+                <h1><span class="naslov">Kursevi koje Vam Camelot nudi</span></h1>
+            </p>
 
             <div id="kursevi"></div>
 
@@ -75,14 +78,63 @@
             <div id="celo">
                 <div id="levi">
                     <h2>Prirodne nauke</h2>
+                    <div id="ratSc"></div>
                 </div>
                 <div id="desni">
                     <h2>Jezici</h2>
+                    <div id="ratLang"></div>
                 </div>
             </div>
 
+        </article>
+
+
+        <br/><br/>
+        <article id="zak">
+
+            <h1><span class="naslov">Zakažite čas u Camelot dvorcu znanja</span></h1>
+
+            <div id="zakazivanje">
+
+                <div class="divDan">Izaberi dan: <select class="selDan">
+                    <option value="pon">Ponedeljak</option>
+                    <option value="uto">Utorak</option>
+                    <option value="sre">Sreda</option>
+                    <option value="cet">Četvrtak</option>
+                    <option value="pet">Petak</option>
+                    <option value="sub">Subota</option>
+                </select></div>
+
+                <!-- <div class="divVreme">Izaberi vreme: <select class="selVreme">
+                        <option value="8">8:00</option>
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                      
+                    </select></div>-->
+
+                <div id="prikaz">
+                    <button id="btn">Prikazi kurseve</button>
+                </div>
+
+                <br/>
+                <div class="available">
+
+                </div>
+
+
+            </div>
+
+
 
         </article>
+
 
 
 

@@ -1,29 +1,29 @@
 {
     "nastavnici": [{
             "id": 1,
-            "licno_ime": "Nenad Kitanović",
+            "licno_ime": "Nenad Jović",
             "rating": 4.91,
             "privatni_cas": true,
-            "kursevi": ["matematika", "hemija", "fizika"],
+            "kursevi": ["matis", "hemija", "fizika"],
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 13, 14, 15, 16, 17]
         },
 
         {
             "id": 2,
-            "licno_ime": "Danijela Kitanović",
+            "licno_ime": "Danica Jović",
             "rating": 4.53,
             "privatni_cas": true,
-            "kursevi": ["engleski", "nemacki", "francuski"],
+            "kursevi": ["engleski", "nemacki", "spanski"],
             "dani": ["uto", "sre", "pet", "sub"],
             "sati": [8, 9, 10, 11, 12, 15, 16, 17]
         },
         {
             "id": 3,
-            "licno_ime": "Anđela Marjanović",
+            "licno_ime": "Anđela Milić",
             "rating": 4.89,
             "privatni_cas": false,
-            "kursevi": ["engleski", "nemacki", "francuski"],
+            "kursevi": ["engleski", "nemacki", "spanski"],
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [9, 10, 13, 14, 15, 16]
         },
@@ -32,7 +32,7 @@
             "licno_ime": "Marko Petrović",
             "rating": 4.77,
             "privatni_cas": false,
-            "kursevi": ["norveski", "finski", "svedski", "danski"],
+            "kursevi": ["norveski", "finski", "svedski"],
             "dani": ["pon", "uto", "sre", "cet"],
             "sati": [9, 10, 13, 14, 15, 16]
         },
@@ -41,7 +41,7 @@
             "licno_ime": "Marijana Stošić",
             "rating": 4.60,
             "privatni_cas": true,
-            "kursevi": ["hemija", "fizika", "engleski", "nemacki"],
+            "kursevi": ["hemija", "fizika", "nemacki"],
             "dani": ["pon", "sre", "cet", "sub"],
             "sati": [9, 10, 13, 14, 15, 16]
         }
@@ -50,7 +50,7 @@
 
     "kursevi": [{
             "id": 1,
-            "ime": "Matematika",
+            "ime": "Matiš",
             "rating": 4.8,
             "mesta_u_grupi": 3,
             "science": true,
@@ -90,7 +90,7 @@
         },
         {
             "id": 5,
-            "ime": "Nemacki",
+            "ime": "Nemački",
             "rating": 4.4,
             "mesta_u_grupi": 3,
             "science": false,
@@ -100,7 +100,7 @@
         },
         {
             "id": 6,
-            "ime": "Francuski",
+            "ime": "Španski",
             "rating": 4.9,
             "mesta_u_grupi": 4,
             "science": false,
@@ -110,7 +110,7 @@
         },
         {
             "id": 7,
-            "ime": "Norveski",
+            "ime": "Norveški",
             "rating": 4.9,
             "mesta_u_grupi": 4,
             "zabrana_rez": false,
@@ -129,7 +129,7 @@
         },
         {
             "id": 9,
-            "ime": "Svedski",
+            "ime": "Švedski",
             "rating": 4.5,
             "mesta_u_grupi": 4,
             "science": false,
