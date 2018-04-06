@@ -1,7 +1,7 @@
 body,
 html {
     height: 100%;
-    font-family: "Inconsolata", sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 #main {
@@ -33,7 +33,6 @@ nav {
     display: block;
     color: white;
     text-align: center;
-    font-family: "Inconsolata", sans-serif;
     padding: 4%;
     text-decoration: none;
     font-size: 17px;
@@ -46,6 +45,11 @@ nav {
 h1 {
     text-align: center;
     font-family: "courier";
+}
+
+.glNas {
+    text-align: center;
+    font-family: Verdana, sans-serif;
 }
 
 .naslov {
@@ -61,7 +65,6 @@ h1 {
 .imgSkola {
     margin: auto;
     display: block;
-    opacity: 0.85;
 }
 
 .rvreme {
@@ -81,8 +84,7 @@ h1 {
 }
 
 .nastavnikDana {
-    display: block;
-    margin: auto;
+    float: left;
     background-color: #f98866;
     opacity: 0.6;
     border: 1px solid black;
@@ -94,4 +96,55 @@ h1 {
 .danNaslov {
     text-align: left;
     font-family: "courier";
+}
+
+.rwdbtn {
+    width: 20%;
+    height: 25px;
+    background-color: #89da59;
+    font-family: "courier";
+    float: left;
+    margin-bottom: 15px;
+}
+
+#glasanje {
+    background-color: #80bd9e;
+    border: 1px dotted black;
+    float: right;
+    width: 25%;
+    height: 75px;
+    margin-right: 30%;
+}
+
+#kurs {
+    margin-top: 18%;
+}
+
+#celo {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#levi {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+#desni {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.kurs {
+    float: left;
+    opacity: 0.8;
+    border: 1px solid black;
+    width: 27%;
+    height: 100px;
+    margin: 2%;
+    text-align: center;
 }

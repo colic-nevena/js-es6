@@ -3,8 +3,11 @@ import { Kurs } from './kurs';
 import { RandomService } from './random.service';
 import { NastavnikService } from './nastavnik.service';
 import { KursService } from './kursevi.service';
+import { DrawService } from './draw.service';
 
 const randserv = new RandomService();
+
+
 
 //rating skole
 Promise.all([
@@ -17,7 +20,7 @@ Promise.all([
 
         var r = Math.round(((k + n) / 2), 2);
 
-        ShowSchoolRating(r);
+        DrawService.ShowSchoolRating(r);
     });
 
 
@@ -25,70 +28,29 @@ Promise.all([
 const teachs = NastavnikService.get()
     .then(teachs => {
         var r = Math.round(teachs.reduce((acc, curr) => acc + curr.rating, 0), 2);
-        ShowTeacherRating(r);
+        DrawService.ShowTeacherRating(r);
     });
 
 
+//crtanje nastavnika i kurseva
 var teachs2 = NastavnikService.get()
-    .then(teachs2 => teachs2.forEach(teach => showTeacher(teach)));
-
-
-
+    .then(teachs2 => teachs2.forEach(teach => DrawService.showTeacher(teach)));
 
 //nastavnik dana
 Promise.all([
         randserv.getRandomNumb(), NastavnikService.get()
     ])
     .then(([num, arr_nast]) => {
-        showTeacherDay(arr_nast[num % arr_nast.length]);
+        DrawService.showTeacherDay(arr_nast[num % arr_nast.length]);
     });
 
 
 
 
+var cs1 = KursService.get()
+    .then(cs1 => cs1.filter(kurs => kurs.science))
+    .then(cs1 => cs1.forEach(kurs => DrawService.ShowScience(kurs)));
 
-
-
-
-//fje za crtanje
-function ShowSchoolRating(rating) {
-
-    const x = document.getElementById("rat");
-    const el = document.createElement("p");
-    el.className = "rejting";
-    el.innerHTML = `<h3>Bodova za kvalitet: ${rating} od mogucih 35</h3>`;
-    x.appendChild(el);
-
-}
-
-function ShowTeacherRating(rating) {
-
-    const x = document.getElementById("ratNast");
-    const el = document.createElement("p");
-    el.className = "rejting";
-    el.innerHTML = `<h3>Bodova za kvalitet: ${rating} od mogucih 25</h3>`;
-    x.appendChild(el);
-
-}
-
-function showTeacher(teacher) {
-    const par = document.getElementById("nastavnici");
-
-    const el = document.createElement("div");
-    el.className = "nastavnik";
-    const { licno_ime, rating } = teacher;
-    el.innerHTML = `<h3>${teacher.licno_ime}</h3> <br/>Ocena: ${teacher.rating}`;
-
-    par.appendChild(el);
-}
-
-function showTeacherDay(teach) {
-    const parent = document.getElementById("day");
-
-    const elem = document.createElement("div");
-    elem.className = "nastavnikDana";
-    const { licno_ime, rating, kursevi } = teach;
-    elem.innerHTML = `<h3>${teach.licno_ime}</h3> <br/>Ocena: ${teach.rating}<br/><br/> ${teach.kursevi}`;
-
-    parent.appendChild(elem);
-}
+var cs2 = KursService.get()
+    .then(cs2 => cs2.filter(kurs => !kurs.science))
+    .then(cs2 => cs2.forEach(kurs => DrawService.ShowLang(kurs)));

@@ -2,9 +2,8 @@
     "nastavnici": [{
             "id": 1,
             "licno_ime": "Nenad Kitanović",
-            "rating": 4.7,
+            "rating": 4.91,
             "privatni_cas": true,
-            "zabrana_rez": false,
             "kursevi": ["matematika", "hemija", "fizika"],
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 13, 14, 15, 16, 17]
@@ -13,9 +12,8 @@
         {
             "id": 2,
             "licno_ime": "Danijela Kitanović",
-            "rating": 4.5,
+            "rating": 4.53,
             "privatni_cas": true,
-            "zabrana_rez": false,
             "kursevi": ["engleski", "nemacki", "francuski"],
             "dani": ["uto", "sre", "pet", "sub"],
             "sati": [8, 9, 10, 11, 12, 15, 16, 17]
@@ -23,9 +21,8 @@
         {
             "id": 3,
             "licno_ime": "Anđela Marjanović",
-            "rating": 4.8,
+            "rating": 4.89,
             "privatni_cas": false,
-            "zabrana_rez": false,
             "kursevi": ["engleski", "nemacki", "francuski"],
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [9, 10, 13, 14, 15, 16]
@@ -33,9 +30,8 @@
         {
             "id": 4,
             "licno_ime": "Marko Petrović",
-            "rating": 5,
+            "rating": 4.77,
             "privatni_cas": false,
-            "zabrana_rez": false,
             "kursevi": ["norveski", "finski", "svedski", "danski"],
             "dani": ["pon", "uto", "sre", "cet"],
             "sati": [9, 10, 13, 14, 15, 16]
@@ -43,9 +39,8 @@
         {
             "id": 4,
             "licno_ime": "Marijana Stošić",
-            "rating": 4.3,
+            "rating": 4.60,
             "privatni_cas": true,
-            "zabrana_rez": false,
             "kursevi": ["hemija", "fizika", "engleski", "nemacki"],
             "dani": ["pon", "sre", "cet", "sub"],
             "sati": [9, 10, 13, 14, 15, 16]
@@ -58,6 +53,7 @@
             "ime": "Matematika",
             "rating": 4.8,
             "mesta_u_grupi": 3,
+            "science": true,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 13, 14, 15, 16, 17]
@@ -67,6 +63,7 @@
             "ime": "Fizika",
             "rating": 4.6,
             "mesta_u_grupi": 1,
+            "science": true,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 13, 14, 15, 16, 17]
@@ -76,6 +73,7 @@
             "ime": "Hemija",
             "rating": 4.4,
             "mesta_u_grupi": 4,
+            "science": true,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 13, 14, 15, 16, 17]
@@ -85,6 +83,7 @@
             "ime": "Engleski",
             "rating": 4.6,
             "mesta_u_grupi": 2,
+            "science": false,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
@@ -92,8 +91,9 @@
         {
             "id": 5,
             "ime": "Nemacki",
-            "rating": 3,
-            "mesta_u_grupi": 3.8,
+            "rating": 4.4,
+            "mesta_u_grupi": 3,
+            "science": false,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
@@ -101,8 +101,9 @@
         {
             "id": 6,
             "ime": "Francuski",
-            "rating": 3,
-            "mesta_u_grupi": 4.7,
+            "rating": 4.9,
+            "mesta_u_grupi": 4,
+            "science": false,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
             "sati": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
@@ -110,8 +111,8 @@
         {
             "id": 7,
             "ime": "Norveski",
-            "rating": 3,
-            "mesta_u_grupi": 4.8,
+            "rating": 4.9,
+            "mesta_u_grupi": 4,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet"],
             "sati": [9, 10, 13, 14, 15, 16]
@@ -119,8 +120,9 @@
         {
             "id": 8,
             "ime": "Finski",
-            "rating": 3,
-            "mesta_u_grupi": 4.8,
+            "rating": 4.2,
+            "mesta_u_grupi": 4,
+            "science": false,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet"],
             "sati": [9, 10, 13, 14, 15, 16]
@@ -128,21 +130,14 @@
         {
             "id": 9,
             "ime": "Svedski",
-            "rating": 3,
-            "mesta_u_grupi": 4.8,
-            "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "cet"],
-            "sati": [9, 10, 13, 14, 15, 16]
-        },
-        {
-            "id": 10,
-            "ime": "Danski",
-            "rating": 3,
-            "mesta_u_grupi": 4.6,
+            "rating": 4.5,
+            "mesta_u_grupi": 4,
+            "science": false,
             "zabrana_rez": false,
             "dani": ["pon", "uto", "sre", "cet"],
             "sati": [9, 10, 13, 14, 15, 16]
         }
+
 
     ]
 
