@@ -26,6 +26,9 @@ const btn = document.getElementById("btn");
 
 btn.onclick = function() {
 
+    const div = document.getElementById("available");
+    div.innerHTML = " ";
+
     const sel = document.querySelector(".selDan");
     const selValueDan = sel.options[sel.selectedIndex].value;
     const sell = document.querySelector(".selVreme");
@@ -33,6 +36,8 @@ btn.onclick = function() {
     nadji(selValueDan, selValueVreme);
 
 };
+
+
 
 
 /*const url = "http://localhost:3000/kursevi";

@@ -162,7 +162,7 @@ h1 {
 }
 
 .divVreme {
-    top: 7%;
+    top: 8%;
     position: absolute;
 }
 
@@ -173,13 +173,15 @@ h1 {
 }
 
 #available {
-    height: 400px;
-    margin-top: 15%;
+    top: 13%;
+    position: absolute;
+    width: 100%;
 }
 
 #zakazivanje {
     position: relative;
-    width: 70%;
+    width: 60%;
+    height: 400px;
 }
 
 #btn {
