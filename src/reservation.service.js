@@ -4,40 +4,42 @@ import { RandomService } from './random.service';
 import { NastavnikService } from './nastavnik.service';
 import { KursService } from './kursevi.service';
 import * as Rx from 'rxjs';
+import { DrawService } from './draw.service';
 
 
 
+function nadji(dan, vreme) {
 
-const div = document.querySelector(".available");
-const divZak = document.getElementById("zakazivanje");
+
+    const niz = KursService.get()
+        .then(niz => niz.forEach(kurs => {
+            let tmp1 = kurs.dani.find(d => d === dan);
+            let tmp2 = kurs.sati.find(s => s === vreme);
+            if (tmp1 !== undefined && tmp2 !== undefined)
+                DrawService.ShowCourse(kurs);
+        }));
+
+
+}
+
+const btn = document.getElementById("btn");
+
+btn.onclick = function() {
+
+    const sel = document.querySelector(".selDan");
+    const selValueDan = sel.options[sel.selectedIndex].value;
+    const sell = document.querySelector(".selVreme");
+    const selValueVreme = sell.options[sell.selectedIndex].value;
+    nadji(selValueDan, selValueVreme);
+
+};
+
 
 /*const url = "http://localhost:3000/kursevi";
 const kursObservable = Rx.Observable.fromPromise(
     fetch(url)
     .then(response => response.json()));
 */
-
-function nadji(dan) {
-
-    var niz = KursService.get()
-
-    .then(niz.filter(kurs.dani.forEach(item => item === dan)))
-        .then(niz => niz.forEach(item => div.innerHTML = item.ime));
-
-}
-
-const btn = document.getElementById("btn");
-
-
-btn.onclick = function() {
-    const sel = document.querySelector(".selDan");
-    var selValue = sel.options[sel.selectedIndex].value;
-
-    nadji(selValue);
-
-};
-
-
 
 
 /*Rx.Observable.fromEvent(select, "onchange")

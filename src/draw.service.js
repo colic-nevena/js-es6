@@ -33,6 +33,7 @@ export class DrawService {
 
 
     static showTeacher(teacher) {
+
         const par = document.getElementById("nastavnici");
 
         const el = document.createElement("div");
@@ -54,10 +55,7 @@ export class DrawService {
         Rx.Observable.fromEvent(button, "click")
             .scan(rejt => rejt + 0.01, teacher.rating)
             //.subscribe(rejt => console.log(`Rejting ${teacher.licno_ime} podignut na ${rejt.toFixed(2)}`))
-            .subscribe(rejt => glasDiv.innerHTML = `Podigli ste rejting profesora: ${teacher.licno_ime} <br/>na ${rejt.toFixed(2)}`)
-
-
-
+            .subscribe(rejt => glasDiv.innerHTML = `Hvala za glas!<br/>Podigli ste rejting profesora: ${teacher.licno_ime} <br/>na ${rejt.toFixed(2)}`)
 
         par2.appendChild(button);
 
@@ -125,6 +123,19 @@ export class DrawService {
 
 
 
+    static ShowCourse(course) {
+
+        const p = document.getElementById("available");
+
+
+        const ell = document.createElement("div");
+        ell.className = "kurs";
+        ell.style.backgroundColor = "#80BD9E";
+        const { ime } = course;
+        ell.innerHTML = `<h2>${course.ime}</h2>`;
+        p.appendChild(ell);
+
+    }
 
 
 
