@@ -3,139 +3,322 @@
             "id": 1,
             "licno_ime": "Nenad Jović",
             "rating": 4.91,
-            "kursevi": ["matis", "hemija", "fizika"],
-            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
-            "sati": [8, 9, 10, 13, 14, 15, 16, 17]
+            "kursevi": [
+                "matis",
+                "hemija",
+                "fizika"
+            ],
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "cet",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                8,
+                9,
+                10,
+                13,
+                14,
+                15,
+                16,
+                17
+            ]
         },
-
         {
             "id": 2,
             "licno_ime": "Danica Jović",
             "rating": 4.53,
-            "kursevi": ["engleski", "nemacki", "spanski"],
-            "dani": ["uto", "sre", "pet", "sub"],
-            "sati": [8, 9, 10, 11, 12, 15, 16, 17]
+            "kursevi": [
+                "engleski",
+                "nemacki",
+                "spanski"
+            ],
+            "dani": [
+                "uto",
+                "sre",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                15,
+                16,
+                17
+            ]
         },
         {
             "id": 3,
             "licno_ime": "Helena Milić",
             "rating": 4.89,
-            "kursevi": ["engleski", "nemacki", "spanski"],
-            "dani": ["pon", "uto", "sre", "cet", "pet", "sub"],
-            "sati": [9, 10, 13, 14, 15, 16]
+            "kursevi": [
+                "engleski",
+                "nemacki",
+                "spanski"
+            ],
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "cet",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                9,
+                10,
+                13,
+                14,
+                15,
+                16
+            ]
         },
         {
             "id": 4,
             "licno_ime": "Marko Andrić",
             "rating": 4.77,
-            "kursevi": ["norveski", "finski", "svedski"],
-            "dani": ["pon", "uto", "sre", "cet"],
-            "sati": [9, 10, 13, 14, 15, 16]
+            "kursevi": [
+                "norveski",
+                "finski",
+                "svedski"
+            ],
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "cet"
+            ],
+            "sati": [
+                9,
+                10,
+                13,
+                14,
+                15,
+                16
+            ]
         },
         {
             "id": 4,
             "licno_ime": "Marija Stošić",
-            "rating": 4.60,
-            "kursevi": ["hemija", "fizika", "nemacki"],
-            "dani": ["pon", "sre", "cet", "sub"],
-            "sati": [9, 10, 13, 14, 15, 16]
+            "rating": 4.6,
+            "kursevi": [
+                "hemija",
+                "fizika",
+                "nemacki"
+            ],
+            "dani": [
+                "pon",
+                "sre",
+                "cet",
+                "sub"
+            ],
+            "sati": [
+                9,
+                10,
+                13,
+                14,
+                15,
+                16
+            ]
         }
-
     ],
-
     "kursevi": [{
             "id": 1,
             "ime": "Matiš",
-            "rating": 5.0,
-            "mesta_u_grupi": 3,
+            "rating": 5,
+            "mesta_na_kursu": 3,
             "science": true,
             "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "pet", "sub"],
-            "sati": ["8", "9", "10", "13"]
+            "dani": [
+
+                "uto",
+                "sre",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                "8",
+                "9",
+                "10",
+                "13"
+            ]
         },
         {
             "id": 2,
             "ime": "Fizika",
             "rating": 4.8,
-            "mesta_u_grupi": 1,
+            "mesta_na_kursu": 2,
             "science": true,
             "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "pet", "sub"],
-            "sati": ["14", "15", "16"]
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                "14",
+                "15",
+                "16"
+            ]
         },
         {
             "id": 3,
             "ime": "Hemija",
             "rating": 4.7,
-            "mesta_u_grupi": 4,
+            "mesta_na_kursu": 9,
             "science": true,
             "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "pet", "sub"],
-            "sati": ["11", "12", "17"]
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                "11",
+                "12",
+                "17"
+            ]
         },
         {
             "id": 4,
             "ime": "Engleski",
             "rating": 4.7,
-            "mesta_u_grupi": 2,
+            "mesta_na_kursu": 2,
             "science": false,
             "zabrana_rez": false,
-            "dani": ["pon", "sre", "cet", "pet", "sub"],
-            "sati": ["8", "9", "12", "13", "14", "15", "16", "17"]
+            "dani": [
+                "pon",
+                "sre",
+                "cet",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                "8",
+                "9",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17"
+            ]
         },
         {
             "id": 5,
             "ime": "Nemački",
             "rating": 4.68,
-            "mesta_u_grupi": 3,
+            "mesta_na_kursu": 6,
             "science": false,
             "zabrana_rez": false,
-            "dani": ["pon", "sre", "cet", "pet", "sub"],
-            "sati": ["8", "9", "10", "11", "15", "16", "17"]
+            "dani": [
+                "pon",
+                "sre",
+                "cet",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                "8",
+                "9",
+                "10",
+                "11",
+                "15",
+                "16",
+                "17"
+            ]
         },
         {
             "id": 6,
             "ime": "Španski",
             "rating": 4.9,
-            "mesta_u_grupi": 4,
+            "mesta_na_kursu": 4,
             "science": false,
             "zabrana_rez": false,
-            "dani": ["uto", "sre", "cet", "pet", "sub"],
-            "sati": ["8", "9", "10", "11", "12", "13", "16", "17"]
+            "dani": [
+                "uto",
+                "sre",
+                "cet",
+                "pet",
+                "sub"
+            ],
+            "sati": [
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "16",
+                "17"
+            ]
         },
         {
             "id": 7,
             "ime": "Norveški",
             "rating": 4.9,
-            "mesta_u_grupi": 4,
-            "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "cet"],
-            "sati": ["9", "10", "14", "15"]
+            "mesta_na_kursu": 0,
+            "zabrana_rez": true,
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "cet"
+            ],
+            "sati": [
+                "9",
+                "10",
+                "14",
+                "15"
+            ]
         },
         {
             "id": 8,
             "ime": "Finski",
             "rating": 4.5,
-            "mesta_u_grupi": 4,
+            "mesta_na_kursu": 5,
             "science": false,
             "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "cet"],
-            "sati": ["8", "11", "16"]
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "cet"
+            ],
+            "sati": [
+                "8",
+                "11",
+                "16"
+            ]
         },
         {
             "id": 9,
             "ime": "Švedski",
             "rating": 4.5,
-            "mesta_u_grupi": 4,
+            "mesta_na_kursu": 1,
             "science": false,
             "zabrana_rez": false,
-            "dani": ["pon", "uto", "sre", "cet"],
-            "sati": ["12", "13", "17"]
+            "dani": [
+                "pon",
+                "uto",
+                "sre",
+                "cet"
+            ],
+            "sati": [
+                "12",
+                "13",
+                "17"
+            ]
         }
-
-
     ]
-
-
-
 }

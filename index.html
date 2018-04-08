@@ -92,11 +92,12 @@
         <br/><br/>
         <article id="zak">
 
-            <h1><span class="naslov">Zakažite čas u Camelot dvorcu znanja</span></h1>
+            <h1><span class="naslov">Izaberite kurs u Camelot dvorcu znanja</span></h1>
+            <hr>
+            <div id="container">
+                <div id="zakazivanje">
 
-            <div id="zakazivanje">
-
-                <div class="divDan">Izaberi dan: <select class="selDan">
+                    <div class="divDan">Izaberi dan: <select class="selDan">
                     <option value="pon">Ponedeljak</option>
                     <option value="uto">Utorak</option>
                     <option value="sre">Sreda</option>
@@ -105,7 +106,7 @@
                     <option value="sub">Subota</option>
                 </select></div>
 
-                <div class="divVreme">Izaberi vreme: <select class="selVreme">
+                    <div class="divVreme">Izaberi vreme: <select class="selVreme">
                         <option value="8">8:00</option>
                         <option value="9">9:00</option>
                         <option value="10">10:00</option>
@@ -119,15 +120,39 @@
                       
                     </select></div>
 
-                <div id="prikaz">
-                    <button id="btn">Prikaži kurseve</button>
+                    <div id="prikaz">
+                        <button id="btn">Prikaži kurseve</button>
+                    </div>
+
+                    <br/>
+                    <div id="available">
+
+                    </div>
+
                 </div>
+                <div id="zakazi">
+                    <h2 span class="upisNaslov">Upiši me na kurs</h2>
+                    <div class="divKurs">Izaberi kurs: <select class="selKurs">
+                        
+                        <option value="Fizika">Fizika</option>
+                        <option value="Hemija">Hemija</option>
+                        <option value="Matiš">Matematika</option>
+                        <option value="Engleski">Engleski</option>
+                        <option value="Nemački">Nemački</option>
+                        <option value="Španski">Španski</option>
+                        <option value="Norveški">Norveški</option>
+                        <option value="Finski">Finski</option>
+                        <option value="Švedski">Švedski</option>
+                    </select></div>
+                    <div class="upisi">
+                        <button id="btnUpis">Upiši me</button>
+                    </div>
+                    <div class="upisi">
+                        <button id="btnDodajKurs">Specijalna rezervacija - Japanski</button>
 
-                <br/>
-                <div id="available">
-
+                    </div>
+                    <div id="ispis"></div>
                 </div>
-
             </div>
 
     </div>

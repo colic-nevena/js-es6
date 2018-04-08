@@ -71,6 +71,7 @@ const nauke = KursService.get()
         DrawService.ShowScienceRating(ratsc1);
     });
 
+
 const langs = KursService.get()
     .then(langs => langs.filter(item => !item.science))
     .then(langs => {
