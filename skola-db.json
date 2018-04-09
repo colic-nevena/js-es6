@@ -136,7 +136,6 @@
             "science": true,
             "zabrana_rez": false,
             "dani": [
-
                 "uto",
                 "sre",
                 "pet",
@@ -319,6 +318,19 @@
                 "13",
                 "17"
             ]
+        }
+    ],
+    "prijavljeni": [{
+            "id": 1,
+            "ime": "Nevena",
+            "prezime": "Čolić",
+            "kurs": "Engleski"
+        },
+        {
+            "id": 2,
+            "ime": "Majda",
+            "prezime": "Čolić",
+            "kurs": "Hemija"
         }
     ]
 }

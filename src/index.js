@@ -16,10 +16,10 @@ Promise.all([
     ])
     .then(([kursevi, nastavnici]) => {
 
-        var k = kursevi.reduce((acc, curr) => acc + curr.rating, 0);
-        var n = nastavnici.reduce((acc, curr) => acc + curr.rating, 0);
+        let k = kursevi.reduce((acc, curr) => acc + curr.rating, 0);
+        let n = nastavnici.reduce((acc, curr) => acc + curr.rating, 0);
 
-        var r = ((k + n) / (kursevi.length + nastavnici.length)).toFixed(2);
+        let r = ((k + n) / (kursevi.length + nastavnici.length)).toFixed(2);
 
         DrawService.ShowSchoolRating(r);
     });
@@ -28,14 +28,14 @@ Promise.all([
 //rating svih nastavnika ukupno
 const teachs = NastavnikService.get()
     .then(teachs => {
-        var r = Math.round(teachs.reduce((acc, curr) => acc + curr.rating, 0), 2);
+        const r = Math.round(teachs.reduce((acc, curr) => acc + curr.rating, 0), 2);
         const r1 = r / teachs.length;
         DrawService.ShowTeacherRating(r1);
     });
 
 
 
-var teachs2 = NastavnikService.get()
+const teachs2 = NastavnikService.get()
     .then(teachs2 => teachs2.forEach(teach => DrawService.showTeacher(teach)));
 
 
@@ -63,6 +63,7 @@ var cs2 = KursService.get()
 
 
 //rating za kurseve
+
 const nauke = KursService.get()
     .then(nauke => nauke.filter(item => item.science))
     .then(nauke => {
