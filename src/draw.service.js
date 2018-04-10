@@ -55,7 +55,7 @@ export class DrawService {
         ////////////////////////////
         Rx.Observable.fromEvent(button, "click")
             .scan(rejt => rejt + 0.01, teacher.rating)
-            .subscribe(rejt => glasDiv.innerHTML = `Hvala za glas!<br/>Podigli ste rejting profesora: ${teacher.licno_ime} <br/>na ${rejt.toFixed(2)}`)
+            .subscribe(rejt => glasDiv.innerHTML = `Hvala za glas!<br/>Želite da podignete rejting profesora: ${teacher.licno_ime} <br/>na ${rejt.toFixed(2)}`)
 
 
         par2.appendChild(button);
@@ -84,8 +84,8 @@ export class DrawService {
         const ell = document.createElement("div");
         ell.className = "kurs";
         ell.style.backgroundColor = "#89DA59";
-        const { ime, rating } = course;
-        ell.innerHTML = `<h3>${course.ime}</h3> <br/>Ocena: ${course.rating}`;
+        const { ime, rating, mesta_na_kursu } = course;
+        ell.innerHTML = `<h3>${course.ime}</h3>Mesta: ${course.mesta_na_kursu}<br/>Ocena: ${course.rating}`;
         p.appendChild(ell);
     }
 
@@ -99,7 +99,7 @@ export class DrawService {
         ell.style.backgroundColor = "#F99866";
 
         const { ime, rating } = course;
-        ell.innerHTML = `<h3>${course.ime}</h3> <br/>Ocena: ${course.rating}`;
+        ell.innerHTML = `<h3>${course.ime}</h3>Mesta: ${course.mesta_na_kursu} <br/>Ocena: ${course.rating}`;
         p.appendChild(ell);
     }
 
@@ -146,12 +146,34 @@ export class DrawService {
 
 
 
+    static crtajFormu() {
+        const divz = document.getElementById("inputi");
+
+        let lab1 = document.createElement("label");
+        lab1.innerHTML = "Ime: ";
+        lab1.className = "labIme";
+        divz.appendChild(lab1);
+
+        let input1 = document.createElement("input");
+        input1.type = "text";
+        input1.className = "inp1";
+        lab1.appendChild(input1);
+        divz.appendChild(document.createElement("br"));
+        divz.appendChild(document.createElement("br"));
+
+        let lab2 = document.createElement("label");
+        lab2.innerHTML = "Prezime: ";
+        divz.appendChild(lab2);
+
+        let input2 = document.createElement("input");
+        input2.type = "text";
+        input2.className = "inp2";
+        lab2.appendChild(input2);
+        divz.appendChild(document.createElement("br"));
+        divz.appendChild(document.createElement("br"));
 
 
-
-
-
-
+    }
 
 
 
