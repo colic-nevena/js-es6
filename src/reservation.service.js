@@ -178,9 +178,11 @@ btnDelete.onclick = function() {
     let dd = document.getElementById("ispis");
     dd.innerHTML = `<strong>Specijalna rezervacija Japanskog jezika uspešno otkazana.</strong>`;
 
-    return fetch('http://localhost:3000/kursevi/10?force=true', {
+    fetch('http://localhost:3000/kursevi/10?force=true', {
         method: 'DELETE'
     }).then(res => res.json());
 
+    const btDel = document.getElementById("btnObrisiJap");
+    btDel.style.visibility = "hidden";
 
 }

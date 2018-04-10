@@ -226,7 +226,7 @@
       "id": 5,
       "ime": "Nemački",
       "rating": 4.68,
-      "mesta_na_kursu": 6,
+      "mesta_na_kursu": 5,
       "science": false,
       "zabrana_rez": false,
       "dani": [
@@ -350,6 +350,12 @@
       "ime": "Majda",
       "prezime": "Čolić",
       "kurs": "Hemija"
+    },
+    {
+      "id": "3",
+      "ime": "Ines",
+      "prezime": "Ilickovic",
+      "kurs": "Nemački"
     }
   ]
 }
