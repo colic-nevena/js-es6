@@ -72,6 +72,7 @@ btnUpis.onclick = function() {
 
     let btnProsledi = document.createElement("button");
     btnProsledi.innerHTML = "Prosledi";
+    btnProsledi.className = "btn btn-secondary";
     divz.appendChild(btnProsledi);
 
     btnProsledi.onclick = function() {
