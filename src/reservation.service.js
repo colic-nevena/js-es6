@@ -22,37 +22,6 @@ function nadji(dan, vreme) {
 
 
 }
-/*
-function update(ime) {
-    const div = document.getElementById("ispis");
-
-    const niz = KursService.get()
-        .then(niz => niz.forEach(kurs => {
-            if (kurs.ime === ime) {
-                if (!kurs.zabrana_rez) {
-
-                    var cnt = kurs.mesta_na_kursu - 1;
-
-                    var m = 'mesta_na_kursu';
-                    var z = 'zabrana_rez';
-
-                    kurs[m] = `${cnt}`;
-                    console.log("\nKURS: " + JSON.stringify(kurs));
-                    if (cnt === 0)
-                        kurs[z] = true;
-
-
-                } else {
-                    div.innerHTML = "Nažalost na ovom kursu nema više slobodnih mesta.";
-                    console.log("\nKURS: " + JSON.stringify(kurs));
-                }
-            }
-
-        }));
-
-    }*/
-
-
 
 const btn = document.getElementById("btn");
 
@@ -114,21 +83,40 @@ btnUpis.onclick = function() {
         const selValueKurs = selk.options[selk.selectedIndex].value;
 
         const inp1 = document.querySelector(".inp1");
-        const ime = inp1.value;
+        const ime1 = inp1.value;
+        const ime = ime1.charAt(0).toUpperCase() + ime1.slice(1);
+
         const inp2 = document.querySelector(".inp2");
-        const prezime = inp2.value;
+        const prezime1 = inp2.value;
+        const prezime = prezime1.charAt(0).toUpperCase() + prezime1.slice(1);
 
 
         dodajPrijavu(selValueKurs, ime, prezime);
+
     }
 };
 
 
+
+
+
 function dodajPrijavu(selValueKurs, ime, prezime) {
 
-    //ovde treba da se prvo proveri da li u trazenom kursu ima mesta, !zabrana_rez
-    //ako ima, update kurs na broj mesta - 1 pa onda dodaj
-    //ako nema, preskoci dodavanje
+
+    /*KursService.get()
+        .then(kursevi => kursevi.filter(kurs => kurs.ime === selValueKurs))
+        .then(kurs => {
+            fetch(`http://localhost:3000/kursevi/ime=${selValueKurs}`, {
+                method: 'put',
+                headers: {
+                    'Accept': 'application/json,text/plain',
+                    'Content-Type': 'application/json'
+                },
+
+                body: JSON.stringify({ id: `${kurs.id}`, ime: `${kurs.ime}`, rating: `${kurs.rating}`, mesta_na_kursu: `${kurs.mesta_na_kursu-1}`, science: `${kurs.science}`, zabrana_rez: `${kurs.zabrana_rez}`, dani: `${kurs.dani}`, sati: `${kurs.sati}` })
+            }).then(res => res.json());
+        });*/
+
 
     PrijavljeniService.get()
         .then(niz => niz.length)
@@ -155,7 +143,7 @@ function dodajPrijavu(selValueKurs, ime, prezime) {
 
 function dodajKurs() {
 
-    fetch('http://localhost:3000/kursevi', {
+    return fetch('http://localhost:3000/kursevi', {
         method: 'post',
         headers: {
             'Accept': 'application/json,text/plain',
@@ -163,6 +151,7 @@ function dodajKurs() {
         },
         body: JSON.stringify({ id: 10, ime: 'Japanski', rating: 5.0, mesta_na_kursu: 15, science: false, zabrana_rez: false, dani: ['pon', 'sre', 'pet'], sati: ['10', '12', '13', '17'] })
     }).then(res => res.json());
+
 
 
 }
@@ -176,6 +165,22 @@ bt.onclick = function() {
     zapamćena u našoj bazi i profesor Vam je sada na raspolaganju u datim terminima. <hr/>Molim osvežite stranicu.`;
 
     dodajKurs();
+
+    const btDel = document.getElementById("btnObrisiJap");
+    btDel.style.visibility = "visible";
+
+}
+
+const btnDelete = document.getElementById("btnObrisiJap");
+btnDelete.onclick = function() {
+
+    let dd = document.getElementById("ispis");
+    dd.innerHTML = "Specijalna rezervacija Japanskog jezika uspešno otkazana.";
+
+    return fetch('http://localhost:3000/kursevi/10?force=true', {
+        method: 'DELETE'
+    }).then(res => res.json());
+
 
 }
 

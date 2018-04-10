@@ -51,11 +51,11 @@ Promise.all([
 
 
 
-var cs1 = KursService.get()
+const cs1 = KursService.get()
     .then(cs1 => cs1.filter(kurs => kurs.science))
     .then(cs1 => cs1.forEach(kurs => DrawService.ShowScience(kurs)));
 
-var cs2 = KursService.get()
+const cs2 = KursService.get()
     .then(cs2 => cs2.filter(kurs => !kurs.science))
     .then(cs2 => cs2.forEach(kurs => DrawService.ShowLang(kurs)));
 

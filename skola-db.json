@@ -191,8 +191,8 @@
         {
             "id": 4,
             "ime": "Engleski",
-            "rating": 4.7,
-            "mesta_na_kursu": 2,
+            "rating": 4.88,
+            "mesta_na_kursu": 6,
             "science": false,
             "zabrana_rez": false,
             "dani": [
@@ -205,9 +205,8 @@
             "sati": [
                 "8",
                 "9",
-                "12",
-                "13",
-                "14",
+                "10",
+                "11",
                 "15",
                 "16",
                 "17"
@@ -331,6 +330,12 @@
             "ime": "Majda",
             "prezime": "Čolić",
             "kurs": "Hemija"
+        },
+        {
+            "id": "3",
+            "ime": "Anđelka",
+            "prezime": "Pavlović",
+            "kurs": "Engleski"
         }
     ]
 }
