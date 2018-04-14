@@ -24,7 +24,7 @@ function nadji(dan, vreme) {
 }
 
 const btn = document.getElementById("btn");
-btn.onclick = function() {
+btn.onclick = () => {
 
     const div = document.getElementById("available");
     div.innerHTML = " ";
@@ -43,7 +43,7 @@ btn.onclick = function() {
 
 
 const btnUpis = document.getElementById("btnUpis");
-btnUpis.onclick = function() {
+btnUpis.onclick = () => {
 
     DrawService.crtajFormu();
     const divz = document.getElementById("inputi");
@@ -72,23 +72,23 @@ btnUpis.onclick = function() {
 
         KursService.getByName(selValueKurs)
             .then(kurs => {
-                const kursic = kurs[0];
+                const kurs1 = kurs[0];
 
-                if (!kursic.zabrana_rez) {
-                    kursic.mesta_na_kursu -= 1;
-                    if (kursic.mesta_na_kursu === 0)
-                        kursic.zabrana_rez = true;
+                if (!kurs1.zabrana_rez) {
+                    kurs1.mesta_na_kursu -= 1;
+                    if (kurs1.mesta_na_kursu === 0)
+                        kurs1.zabrana_rez = true;
 
                     const novi = {
 
-                        "id": kursic.id,
-                        "ime": kursic.ime,
-                        "rating": kursic.rating,
-                        "mesta_na_kursu": kursic.mesta_na_kursu,
-                        "science": kursic.science,
-                        "zabrana_rez": kursic.zabrana_rez,
-                        "dani": kursic.dani,
-                        "sati": kursic.sati
+                        "id": kurs1.id,
+                        "ime": kurs1.ime,
+                        "rating": kurs1.rating,
+                        "mesta_na_kursu": kurs1.mesta_na_kursu,
+                        "science": kurs1.science,
+                        "zabrana_rez": kurs1.zabrana_rez,
+                        "dani": kurs1.dani,
+                        "sati": kurs1.sati
                     };
 
                     dodajPrijavu(novi, novi.id, ime, prezime);
@@ -159,7 +159,7 @@ function dodajKurs() {
 }
 
 var bt = document.getElementById("btnDodajKurs");
-bt.onclick = function() {
+bt.onclick = () => {
 
     let divv = document.getElementById("ispis");
     divv.innerHTML = `<strong>Japanski jezik nije standardni kurs naše škole.<br/>Vaša rezervacija je 
@@ -173,7 +173,7 @@ bt.onclick = function() {
 }
 
 const btnDelete = document.getElementById("btnObrisiJap");
-btnDelete.onclick = function() {
+btnDelete.onclick = () => {
 
     let dd = document.getElementById("ispis");
     dd.innerHTML = `<strong>Specijalna rezervacija Japanskog jezika uspešno otkazana.</strong>`;
