@@ -1,1 +1,1 @@
-"# RWA-es6" 
+"# JavaScript es6 basics project" 
